@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jeopardy!</title>
+    <meta charset="utf-8" />
+    <link href="jeopardy2.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Jeopardy!</h1>
+
+    <!--Div element for player 1. This means player class, for player 0, and player 0 starts off as active player.-->
+    <div class="player--0 player--active">
+        <h2>Player One</h2>
+        <h4>Score</h4>
+        <p class="score" id="score--0">0</p>
+
+    </div>
+
+
+
+
+
+    <!--Div element to place the table-->
+    <div class="Gameboard">
+        <!--Create table class-->
+        <table class="table" border="1">
+            <tr>
+                <th>Catagory 1</th>
+                <th>Catagory 2</th>
+                <th>Catagory 3</th>
+                <th>Catagory 4</th>
+                <th>Catagory 5</th>
+            </tr>
+            <!--Row 1 for 100-->
+            <tr>
+                <td><button class="oneH" id="1">100</button></td>
+                <td><button class="oneH" id="2">100</button></td>
+                <td><button class="oneH" id="3">100</button></td>
+                <td> <button class="oneH" id="4">100</button></td>
+                <td><button class="oneH" id="5">100</button></td>
+
+            </tr>
+            <!--Row 2 for 200-->
+            <tr>
+                <td><button class="twoH" id="6">200</button></td>
+                <td><button class="twoH" id="7">200</button></td>
+                <td><button class="twoH" id="8">200</button></td>
+                <td> <button class="twoH" id="9">200</button></td>
+                <td> <button class="twoH" id="10">200</button></td>
+            </tr>
+            <!--Row 3 for 300-->
+            <tr>
+                <td><button class="threeH" id="11">300</button></td>
+                <td><button class="threeH" id="12">300</button></td>
+                <td><button class="threeH" id="13">300</button></td>
+                <td><button class="threeH" id="14">300</button></td>
+                <td><button class="threeH" id="15">300</button></td>
+            </tr>
+            <!--Row 4 for 400-->
+            <tr>
+                <td><button class="fourH" id="16">400</button></td>
+                <td><button class="fourH" id="17">400</button></td>
+                <td><button class="fourH" id="18">400</button></td>
+                <td><button class="fourH" id="19">400</button></td>
+                <td><button class="fourH" id="20">400</button></td>
+            </tr>
+            <!--Row 5 for 500-->
+            <tr>
+                <td><button class="fiveH" id="21">500</button></td>
+                <td><button class="fiveH" id="22">500</button></td>
+                <td><button class="fiveH" id="23">500</button></td>
+                <td><button class="fiveH" id="24">500</button></td>
+                <td><button class="fiveH" id="25">500</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Div element for player 2-->
+    <div class="player--1">
+        <h2>Player Two</h2>
+        <h4>Score</h4>
+        <p class="score" id="score--1">0</p>
+
+    </div>
+
+    <!--Close dive element for the table-->
+
+    <!--Create modal class-->
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h3>Question</h3>
+        <p class="question">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+
+        <p id="my-answer"></p>
+
+        <form>
+
+            <input type="text" id="answer" name="answer"><br>
+
+
+        </form>
+        </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script2.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>
